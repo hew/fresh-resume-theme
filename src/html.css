@@ -1,0 +1,39 @@
+/* An empty CSS file. */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/basscss/8.0.4/css/basscss.min.css');
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
+    sans-serif;
+}
+
+a {
+  color: #0e0e0e;
+  text-decoration: none;
+}
+
+.email, .website {
+  text-decoration: none;
+  color: #35323e;
+  border-bottom: 3px solid #dfe2dd;
+}
+
+hr {
+  width: 0%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 0;
+  border: 0;
+  border-top: 2px dashed rgb(154, 103, 225);
+}
+
+main {
+  max-width: 64em;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+  color: rgb(154, 103, 225);
+}

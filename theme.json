@@ -1,0 +1,15 @@
+{
+  "title": "hummus",
+  "description": "A tasty resume theme.",
+  "author": "hew <hew@hew.tools> (https://github.com/hew)",
+  "engine": "handlebars",
+  "message": "Mmmm.",
+  "helpers": ["helpers/*.js"],
+  "fonts": {
+    "all": {
+      "default": ["-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Arial", "sans-serif"],
+      "title": [],
+      "heading3": []
+    }
+  }
+}
