@@ -1,0 +1,24 @@
+{{#section 'affiliation'}}
+<hr>
+<section class="affiliation">
+  <h2>{{{sectionTitle "AFFILIATION"}}}</h2>
+  <div class="">
+    {{#each r.affiliation.history}}
+      {{#if url}}
+      <h4><em>{{position}}</em>, <a href="{{{url}}}">{{organization}}<em></a></h4>
+      {{else}}
+      <h4><em>{{position}}</em></h4>
+      {{/if}}
+      <span class="date">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
+      {{{summary}}}
+      {{#if highlights}}
+        <ul>
+        {{#each highlight}}
+          <li>{{{this}}}</li>
+        {{/each}}
+        </ul>
+      {{/if}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}

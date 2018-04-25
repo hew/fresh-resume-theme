@@ -1,0 +1,26 @@
+{{#section 'employment'}}
+<hr>
+<section class="employment">
+  <h2>{{{sectionTitle "EMPLOYMENT"}}}</h2>
+  <div class="">
+    {{#each r.employment.history}}
+      {{#if url}}
+      <h4><em>{{position}}</em>, <a href="{{{url}}}">{{employer}}</a></h4>
+      {{else}}
+      <h4><em>{{position}}</em>, {{employer}}</h4>
+      {{/if}}
+      <span class="date">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
+      {{{summary}}}
+      {{#if highlights}}
+        <ul>
+        {{#each highlights}}
+          <li>{{{this}}}</li>
+        {{/each}}
+        </ul>
+      {{/if}}
+    {{/each}}
+  </div>
+</section>
+{{/section}}
+
+
