@@ -29,15 +29,17 @@
 
 
 {{!<!--
-  Use predefined global partials for the other sections.
 
-  The "inline" bit before each section allows us to pass a custom heading
-  icon into the global partial. For this theme, we're using Font Awesome.
+  1. `section/[name]` - literally no idea where these templates are coming from
+
+  2. `[name]` - come from /partials, and can be either .html/.hbs format.
+          (or other formats, if you configure theme in theme.json)
+
 -->}}
 
-{{> section/skills }}
+{{> skills }}
 
-{{> section/employment }}
+{{> employment }}
 
 {{> section/projects }}
 
@@ -50,6 +52,8 @@
 {{> section/service }}
 
 {{> section/extracurricular }}
+
+{{> testimonials }}
 
 {{> section/samples }}
 
