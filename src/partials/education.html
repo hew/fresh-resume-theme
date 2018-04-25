@@ -1,15 +1,15 @@
 {{#section 'education'}}
 <hr>
 <section class="education">
-  <h2>{{{sectionTitle "EDUCATION"}}}</h2>
+  <h2 class="py1">{{{sectionTitle "EDUCATION"}}}</h2>
   <div class="">
     {{#each r.education.history}}
       {{#if url}}
-      <h4><em>{{title}}</em>, <a href="{{{url}}}">{{institution}}<em></a></h4>
+      <h4><em>{{title}}</em>, <a href="{{{url}}}">{{institution}}</a></h4>
       {{else}}
       <h4><em>{{title}}</em></h4>
       {{/if}}
-      <span class="date">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
+      <span class="block date py1 mb1">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
       {{{summary}}}
       {{#if curriculum}}
         <ul>

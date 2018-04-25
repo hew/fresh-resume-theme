@@ -1,15 +1,15 @@
 {{#section 'affiliation'}}
 <hr>
 <section class="affiliation">
-  <h2>{{{sectionTitle "AFFILIATION"}}}</h2>
+  <h2 class="py1">{{{sectionTitle "AFFILIATION"}}}</h2>
   <div class="">
     {{#each r.affiliation.history}}
       {{#if url}}
-      <h4><em>{{position}}</em>, <a href="{{{url}}}">{{organization}}<em></a></h4>
+      <h4><em>{{position}}</em>, <a href="{{{url}}}">{{organization}}</a></h4>
       {{else}}
       <h4><em>{{position}}</em></h4>
       {{/if}}
-      <span class="date">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
+      <span class="block date py1">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
       {{{summary}}}
       {{#if highlights}}
         <ul>

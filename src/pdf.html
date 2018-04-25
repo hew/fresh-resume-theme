@@ -7,62 +7,50 @@
   </head>
   <body>
     <main>
-      <header>
-        <h1>{{{ r.name }}}</h1>
-        <div id="contact">
-          {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
-          {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
-          {{#has 'contact.website'}}<div class="website"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
+      <header class="contact py3">
+        <div class="flex items-center">
+          <h1 class="purple">{{{ r.name }}}</h1>
+          <div class="ml-auto flex">
+            {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
+            {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
+            {{#has 'contact.website'}}<div class="website ml1"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
+          </div>
         </div>
+        <h2 class="gray-dark mt1">{{{ r.info.label }}}</h2>
       </header>
 
 
 
 {{#has "info.brief"}}
-<section id="summary">
-  {{{ r.info.brief }}}
+<section class="summary">
+  <div class="py1">
+    {{{ r.info.brief }}}
+  </div>
 </section>
 {{/has}}
 
 
 
 {{!<!--
-  Use predefined global partials for the other sections.
 
-  The "inline" bit before each section allows us to pass a custom heading
-  icon into the global partial. For this theme, we're using Font Awesome.
+  1. `section/[name]` - literally no idea where these templates are coming from,
+                        but if you use it below, it'll render some default base 
+                        theme template so long as you have json data for it.
+
+  2. `[name]`         - come from /partials, and can be either .html/.hbs format.
+                        (or other formats, if you configure theme in theme.json)
+
 -->}}
 
-{{> section/skills }}
+{{> skills }}
 
-{{> section/employment }}
+{{> employment }}
 
-{{> section/projects }}
+{{> education }}
 
-{{> section/governance }}
+{{> affiliation }}
 
-{{> section/education }}
-
-{{> section/affiliation }}
-
-{{> section/service }}
-
-{{> section/extracurricular }}
-
-{{> section/samples }}
-
-{{> section/writing }}
-
-{{> section/reading }}
-
-{{> section/recognition }}
-
-{{> section/speaking }}
-
-{{> section/references }}
-
-{{> section/interests }}
-
+{{> testimonials }}
 
 
     </main>

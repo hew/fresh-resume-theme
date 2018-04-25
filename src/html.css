@@ -2,64 +2,33 @@
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/basscss/8.0.4/css/basscss.min.css');
 
+:root {
+  --purple: rgb(154, 103, 225);
+  --gray: #172727;
+  --gray-dark: #0e0e0e;
+}
+
+
 html {
+  box-sizing: border-box;
+  line-height: 1.3;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
     sans-serif;
-    line-height: 1.3;
+    color: var(--gray);
+}
+
+h1, h2, h3, h4, h5, p, ul {
+  margin: 0;
 }
 
 a {
-  color: #0e0e0e;
+  color: #000;
   text-decoration: none;
-  color: #35323e;
   border-bottom: 3px solid #dfe2dd;
 }
 
-/* h1, h2, h3, h4, h5 { */
-/*   margin: 0; */
-/* } */
-
-h1 {
-  font-size: 28px;
-  color: rgb(154, 103, 225);
-}
-
-h2 {
-  margin-top: 1.5em;
-  margin-bottom: 0.25em;
-  font-style: normal;
-}
-
-h3 {
-  margin: 0.5em 0;
-}
-
-h4 {
-  margin: 1em 0;
-}
-
-p, ul {
-  margin: 0.25em 0;
-}
-
-ul {
-  margin-bottom: 1.5em;
-}
-
-thead > tr {
-  display: flex;
-  align-items: start;
-}
-
-thead > tr {}
-
-.email, .website {
-  text-decoration: none;
-  color: #35323e;
-  border-bottom: 3px solid #dfe2dd;
-}
-
+/* Hack because I can't seem to find where these default content templates (which have an <hr>) are coming from */
 hr {
   width: 0%;
   margin-top: 0.5em 0;
@@ -73,23 +42,31 @@ main {
   margin: 0 auto 4em;
 }
 
+.purple {
+  color: var(--purple); 
+}
+
+.gray-dark {
+  color: var(--gray-dark);
+}
+
 .skill-title {
-  min-width: 100px;
+  min-width: 170px;
   margin: 0;
-}
-
-.skills p {
-  margin: 0;
-}
-
-.employment h4,
-.education h4,
-.affiliation h4 {
-  margin-top: 0.75em;
-  margin-bottom: 0.25em;
 }
 
 .date {
   color: gray;
   font-size: small;
+}
+
+.keywords {
+  list-style: none;
+  padding: 0;
+}
+
+.keywords li  {
+  font-size: 12px;
+  background-color: var(--gray); 
+  color: white;
 }
