@@ -68,5 +68,6 @@ main {
 .keywords li  {
   font-size: 12px;
   background-color: var(--gray); 
+  display: inline-block;
   color: white;
 }
