@@ -1,13 +1,13 @@
 {{#section 'employment'}}
 <hr>
 <section class="employment">
-  <h2 class="py1">{{{sectionTitle "EMPLOYMENT"}}}</h2>
+  <h2 class="py1 f2">{{{sectionTitle "EMPLOYMENT"}}}</h2>
   <div class="">
     {{#each r.employment.history}}
       {{#if url}}
-      <h4><em>{{position}}</em>, <a href="{{{url}}}">{{employer}}</a></h4>
+      <h4 class="f4"><em>{{position}}</em>, <a href="{{{url}}}">{{employer}}</a></h4>
       {{else}}
-      <h4><em>{{position}}</em>, {{employer}}</h4>
+      <h4 class="f4"><em>{{position}}</em>, {{employer}}</h4>
       {{/if}}
       <span class="block date py1">{{formatDate safe.start 'YYYY-MM'}}&mdash;{{#if current}}Present{{else}}{{formatDate safe.end 'YYYY-MM'}}{{/if}}</span>
       {{{summary}}}
@@ -19,9 +19,9 @@
         </ul>
       {{/if}}
       {{#if keywords}}
-        <ul class="mb3 mt1 flex keywords">
+        <ul class="mb3 mt1 flex flex-wrap keywords">
         {{#each keywords}}
-          <li class="mr1 ml1 px1">{{{this}}}</li>
+          <li class="m1">{{{this}}}</li>
         {{/each}}
         </ul>
       {{/if}}

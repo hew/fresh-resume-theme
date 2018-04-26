@@ -1,6 +1,7 @@
 /* An empty CSS file. */
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/basscss/8.0.4/css/basscss.min.css');
+@import url('https://cdn.rawgit.com/mrmrs/type.css/7917af33/type.css');
 
 :root {
   --purple: rgb(154, 103, 225);
@@ -12,6 +13,7 @@
 html {
   box-sizing: border-box;
   line-height: 1.3;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial',
     sans-serif;
@@ -66,8 +68,12 @@ main {
 }
 
 .keywords li  {
-  font-size: 12px;
+  font-size: 10px;
+  min-width: 90px;
+  padding: 0.5em 0.25em;
   background-color: var(--gray); 
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }

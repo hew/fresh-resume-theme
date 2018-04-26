@@ -9,15 +9,17 @@
   <body>
     <main>
       <header class="contact py3">
-        <div class="flex items-center">
-          <h1 class="purple">{{{ r.name }}}</h1>
-          <div class="ml-auto flex">
-            {{#has 'contact.email'}}<div class="email"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
-            {{#has 'contact.phone'}}<div class="phone">{{ RAW.contact.phone }}</div>{{/has}}
-            {{#has 'contact.website'}}<div class="website ml1"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
+        <div class="sm-flex items-center">
+          <div class="">
+            <h1 class="purple f1">{{{ r.name }}}</h1>
+            <h2 class="gray-dark mt1 f2">{{{ r.info.label }}}</h2>
+          </div>
+          <div class="ml-auto sm-flex">
+            {{#has 'contact.email'}}<div class="email px1 mt1"><a href="mailto:{{{ RAW.contact.email }}}">{{ RAW.contact.email }}</a></div>{{/has}}
+            {{#has 'contact.phone'}}<div class="phone px1 mt1">{{ RAW.contact.phone }}</div>{{/has}}
+            {{#has 'contact.website'}}<div class="website px1 mt1"><a href="{{{ RAW.contact.website }}}">{{trimURL RAW.contact.website }}</a></div>{{/has}}
           </div>
         </div>
-        <h2 class="gray-dark mt1">{{{ r.info.label }}}</h2>
       </header>
 
 

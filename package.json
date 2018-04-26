@@ -1,0 +1,23 @@
+{
+  "name": "fresh-resume-theme",
+  "version": "1.0.0",
+  "description": "A fresh resume theme.",
+  "main": "theme.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hew/fresh-resume-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hew/fresh-resume-theme/issues"
+  },
+  "homepage": "https://github.com/hew/fresh-resume-theme#readme",
+  "devDependencies": {
+    "type.css": "^0.1.0"
+  }
+}
