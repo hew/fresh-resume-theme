@@ -1,5 +1,9 @@
 {{ r.name }}
-============
+=================
+
+{{ r.info.label }}
+=================
+
 {{#has 'contact.email' }}Email: {{{ r.contact.email }}}{{/has}}
 {{#has 'contact.phone' }}Tel: {{{ r.contact.phone }}}{{/has}}
 {{#has 'contact.website' }}Web: {{{ r.contact.website }}}{{/has}}
@@ -10,13 +14,13 @@
 
 {{> section/employment }}
 
-{{> section/projects }}
-
-{{> section/governance }}
-
 {{> section/education }}
 
 {{> section/affiliation }}
+
+{{> section/projects }}
+
+{{> section/governance }}
 
 {{> section/samples }}
 
