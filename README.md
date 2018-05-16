@@ -4,7 +4,7 @@
 
 This is my resume theme, which is based on the [Fresh Standard](https://github.com/fresh-standard/fresh-resume-schema).
 
-See it in action: https://github.com/hew/resume
+See it in action: https://hew.github.io/resume
 
 ## Libraries Used
 * [basscss](https://github.com/basscss/basscss)
