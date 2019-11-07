@@ -1,20 +1,17 @@
 {{#section 'skills'}}
 <hr>
 <section class="skills">
-  <h2 class="py1 f2">{{{sectionTitle "SKILLS"}}}</h2>
+  <h2 class="py1 f2">{{{sectionTitle "ENGINEERING SKILLS"}}}</h2>
   <div class="">
-    {{#each r.skills.sets}}
+    {{#each r.skills}}
       <div class="sm-flex py1">
-        <h4 class="skill-title mr3 f4"><strong>{{name}}</strong></h4>
+        <h4 class="mr3 f4"><strong>•</strong></h4>
         <p class="">
-          {{#if skills}}
-            {{#each skills}}
-              <span class="">{{this}}</span>{{#unless @last}}, {{/unless}}
-            {{/each}}
-          {{/if}}
+           <span class="">{{name}}</span>
         </p>
       </div>
     {{/each}}
   </div>
 </section>
 {{/section}}
+

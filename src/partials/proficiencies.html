@@ -1,0 +1,24 @@
+{{#section 'proficiencies'}}
+<hr>
+<section class="skills">
+  <h2 class="py1 f2">{{{sectionTitle "TECHNICAL PROFICIENCIES"}}}</h2>
+  <div class="">
+    {{#each r.proficiencies}}
+      <div class="sm-flex py1">
+        <div class="sm-flex py1">
+          <h4 class="skill-title mr2 f4"><strong>{{name}}</strong></h4>
+          <p class="">
+            {{#if skills}}
+              {{#each skills}}
+                <span class="">{{this}}</span>{{#unless @last}}, {{/unless}}
+              {{/each}}
+            {{/if}}
+          </p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</section>
+{{/section}}
+
+
