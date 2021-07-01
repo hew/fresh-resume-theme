@@ -1,0 +1,15 @@
+{{#section 'projects'}}
+<hr>
+<section class="skills">
+  <h2 class="py1 f2">{{{sectionTitle "PROJECTS"}}}</h2>
+  <div class="">
+    {{#each r.projects}}
+      <div class="py1">
+        <h4 class="skill-title mr2 f4"><strong>{{name}}</strong></h4>
+        <p class="mt2 mb2">{{description}}</p>
+        {{{href}}}
+      </div>
+    {{/each}}
+  </div>
+</section>
+{{/section}}
